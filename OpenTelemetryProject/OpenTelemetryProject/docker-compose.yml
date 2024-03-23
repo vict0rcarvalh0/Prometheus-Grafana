@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  prometheus:
+    image: prom/prometheus
+    network_mode: "host"
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+      
+  grafana:
+    image: grafana/grafana
+    network_mode: "host"
+    container_name: grafana
+
+  jaeger:
+    image: jaegertracing/all-in-one
+    container_name: jaeger
+    network_mode: "host"
