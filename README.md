@@ -1,6 +1,22 @@
 # Prometheus-Grafana
-## Tecnologia e conceitos aprendidos
+## Tecnologias e conceitos aprendidos
+### Observabilidade
+Observabilidade refere-se à capacidade de entender o estado interno de um sistema com base em suas saídas externas. Em um sistema distribuído, onde múltiplos componentes interagem para fornecer um serviço, a observabilidade é crucial para entender e depurar o comportamento do sistema como um todo. Isso envolve monitorar métricas de desempenho, rastrear solicitações através dos diferentes serviços, analisar logs e capturar eventos relevantes. Portanto, a observabilidade permite entender o que está acontecendo dentro de um sistema, identificar problemas, diagnosticar falhas e otimizar o desempenho.
 
+### OpenTelemetry:
+O OpenTelemetry é um conjunto de ferramentas, APIs e padrões para observabilidade em sistemas distribuídos. Nesse sentido, ele fornece instrumentação para coletar dados de rastreamento distribuído, métricas e logs de aplicativos e serviços em execução em ambientes distribuídos, como microsserviços, contêineres e ambientes de nuvem. O OpenTelemetry é projetado para ser interoperável, extensível e oferece suporte a várias linguagens de programação e sistemas de execução.
+
+### Prometheus:
+O Prometheus é um sistema de monitoramento e alerta de código aberto, projetado para coletar, armazenar e consultar métricas de sistemas distribuídos. Ele coleta métricas de alvos configurados, como aplicativos e serviços, usando um modelo de coleta de pull. As métricas são armazenadas em um banco de dados de séries temporais, onde podem ser consultadas e analisadas usando a linguagem de consulta Prometheus (PromQL). Além disso, o Prometheus também suporta alertas baseados em regras definidas pelo usuário.
+
+### Grafana:
+O Grafana é uma plataforma de análise e visualização de métricas de código aberto, que funciona bem com Prometheus e outros bancos de dados de séries temporais. Ele permite criar dashboards interativos e personalizados para monitorar e analisar métricas de sistemas distribuídos. Grafana oferece uma variedade de painéis e gráficos predefinidos, além de recursos avançados de personalização para criar visualizações informativas e esteticamente agradáveis.
+
+### Rastreamento Distribuído:
+Rastreamento distribuído é uma técnica de monitoramento que permite rastrear o fluxo de uma solicitação em um sistema distribuído composto por vários componentes interconectados. Cada componente registra informações sobre a solicitação à medida que ela passa por ele, incluindo tempo de execução, dependências externas, erros e metadados relevantes. Esses dados de rastreamento são agregados e correlacionados para fornecer insights sobre o desempenho e o comportamento do sistema como um todo.
+
+### Jaeger:
+O Jaeger é uma ferramenta de rastreamento distribuído de código aberto, usada para monitorar e diagnosticar solicitações em sistemas distribuídos complexos. Ele coleta e armazena dados de rastreamento de várias fontes e fornece uma interface de usuário intuitiva para visualizar e analisar o fluxo de solicitações através dos diferentes componentes do sistema. Além disso, o Jaeger é altamente escalável e suporta recursos avançados, como análise de dependências, análise de latência e correlação de logs e pode ser integrado com o OpenTelemetry e outras tecnologias de observabilidade para oferecer uma solução completa de rastreamento distribuído.
 
 ## Relatório
 Criei um projeto de API Web ASP.NET Core Vazio no Rider e adicionei a definiçãao de métricas(greetings.count) e fonte de atividade(OtPrGRYa.Example) no código. Além disso, excluí todo o código que vem com o templatep padrão, incluindo a definição do ponto de extremidade de API WeatherForecast e todo o código que o envolvia.
